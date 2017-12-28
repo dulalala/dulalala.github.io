@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo+node+git 搭建个人博客 | 打豆豆</title>
+  <title>hexo+github搭建个人博客 | 打豆豆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、环境 工具的安装 1. node 一款牛叉的web服务器，目前很多大型项目都使用node搭建 -    特点：解析效率高，没有兼容性 比较适合io密集型的项目 -    版本：建议版本是6.10-    安装：下载相应操作系统的安装包，点击下载  如何测试？ win+r 输入 cmd 回车 在新打开的命令行输入 node -v 如果能显示node版本则安装成功，否则重新安装2. vscode">
+  <meta name="description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同事借助github可以实现零成本搭建和维护，Let’s go！  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕后通过以下步骤检测是否安装成功：  win+r打开命令行窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+node+git 搭建个人博客">
-<meta property="og:url" content="http://www.baidu.com/2017/12/26/笔记/index.html">
+<meta property="og:title" content="hexo+github搭建个人博客">
+<meta property="og:url" content="http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/index.html">
 <meta property="og:site_name" content="打豆豆">
-<meta property="og:description" content="一、环境 工具的安装 1. node 一款牛叉的web服务器，目前很多大型项目都使用node搭建 -    特点：解析效率高，没有兼容性 比较适合io密集型的项目 -    版本：建议版本是6.10-    安装：下载相应操作系统的安装包，点击下载  如何测试？ win+r 输入 cmd 回车 在新打开的命令行输入 node -v 如果能显示node版本则安装成功，否则重新安装2. vscode">
-<meta property="og:image" content="http://www.baidu.com/img/3.jpg">
-<meta property="og:updated_time" content="2017-12-28T03:38:59.545Z">
+<meta property="og:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同事借助github可以实现零成本搭建和维护，Let’s go！  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕后通过以下步骤检测是否安装成功：  win+r打开命令行窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或">
+<meta property="og:updated_time" content="2017-12-28T08:07:01.991Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+node+git 搭建个人博客">
-<meta name="twitter:description" content="一、环境 工具的安装 1. node 一款牛叉的web服务器，目前很多大型项目都使用node搭建 -    特点：解析效率高，没有兼容性 比较适合io密集型的项目 -    版本：建议版本是6.10-    安装：下载相应操作系统的安装包，点击下载  如何测试？ win+r 输入 cmd 回车 在新打开的命令行输入 node -v 如果能显示node版本则安装成功，否则重新安装2. vscode">
-<meta name="twitter:image" content="http://www.baidu.com/img/3.jpg">
+<meta name="twitter:title" content="hexo+github搭建个人博客">
+<meta name="twitter:description" content="hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同事借助github可以实现零成本搭建和维护，Let’s go！  环境搭建安装node环境在node官网下载对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕后通过以下步骤检测是否安装成功：  win+r打开命令行窗口 输入cmd回车 在cmd窗口输入node -v  如果提示“node不是外部或">
   
     <link rel="alternative" href="/atom.xml" title="打豆豆" type="application/atom+xml">
   
@@ -226,11 +224,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-hexo-github搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/12/26/笔记/" class="article-date">
-      <time datetime="2017-12-26T08:33:02.000Z" itemprop="datePublished">2017-12-26</time>
+      <a href="/2017/12/28/hexo-github搭建个人博客/" class="article-date">
+      <time datetime="2017-12-28T06:37:31.000Z" itemprop="datePublished">2017-12-28</time>
 </a>
     </div>
   
@@ -243,7 +241,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo+node+git 搭建个人博客
+      hexo+github搭建个人博客
     </h1>
   
 
@@ -260,22 +258,142 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><img src="/img/3.jpg" style="width:600px;"></p>
-<p></p><h1 style="color:red">一、环境 工具的安装</h1><p></p>
-<h2 id="1-node"><a href="#1-node" class="headerlink" title="1. node"></a>1. node</h2><p> 一款牛叉的web服务器，目前很多大型项目都使用node搭建</p>
-<h3 id="特点：解析效率高，没有兼容性"><a href="#特点：解析效率高，没有兼容性" class="headerlink" title="-    特点：解析效率高，没有兼容性"></a>-    特点：解析效率高，没有兼容性</h3><p> 比较适合io密集型的项目</p>
-<h3 id="版本：建议版本是6-10"><a href="#版本：建议版本是6-10" class="headerlink" title="-    版本：建议版本是6.10"></a>-    版本：建议版本是6.10</h3><h3 id="安装："><a href="#安装：" class="headerlink" title="-    安装："></a>-    安装：</h3><p>下载相应操作系统的安装包，<a href="https://nodejs.org" target="_blank" rel="noopener">点击下载</a> </p>
-<h3 id="如何测试？"><a href="#如何测试？" class="headerlink" title="如何测试？"></a>如何测试？</h3><ol>
-<li>win+r 输入 cmd 回车</li>
-<li>在新打开的命令行输入 node -v</li>
-<li>如果能显示node版本则安装成功，否则重新安装<h2 id="2-vscode-：多语言开发工具"><a href="#2-vscode-：多语言开发工具" class="headerlink" title="2. vscode ：多语言开发工具"></a>2. vscode ：多语言开发工具</h2><h2 id="3-git-版本控制器"><a href="#3-git-版本控制器" class="headerlink" title="3. git 版本控制器"></a>3. git 版本控制器</h2></li>
+        <p>hexo是目前最主流的静态博客框架，该框架基于node，因此编译效率非常高，同事借助github可以实现零成本搭建和维护，Let’s go！</p>
+<hr>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装node环境"><a href="#安装node环境" class="headerlink" title="安装node环境"></a>安装node环境</h2><p>在node官网<a href="http://www.nodejs.org" target="_blank" rel="noopener">下载</a>对应操作系统的node安装包，安装过程比较简单，就是next模式，安装完毕后通过以下步骤检测是否安装成功：</p>
+<ul>
+<li>win+r打开命令行窗口</li>
+<li>输入cmd回车</li>
+<li>在cmd窗口输入node -v</li>
+</ul>
+<p>如果提示“node不是外部或内部命令”，则表示安装失败<br>git：版本控制器</p>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>进入git官网<a href="http://git-scm.com/downloads" target="_blank" rel="noopener">下载</a>对应操作系统的git安装包，next模式安装</p>
+<h2 id="安装vscode编译器"><a href="#安装vscode编译器" class="headerlink" title="安装vscode编译器"></a>安装vscode编译器</h2><p>vscode是一款强大的IDE</p>
+<hr>
+<h1 id="安装hexo脚手架"><a href="#安装hexo脚手架" class="headerlink" title="安装hexo脚手架"></a>安装hexo脚手架</h1><ol>
+<li>win+r输入cmd回车</li>
+<li><p>输入如下命令，回车</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>npm：依赖包管理器</li>
+<li>install：安装、导入，可以简写为i</li>
+<li>-g：全局安装</li>
+</ul>
+</li>
 </ol>
-<p></p><h1 style="color:red">二、安装hexo脚手架</h1><p></p>
+<h1 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h1><ol>
+<li><p>在指定位置使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入博客目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="本地预览博客"><a href="#本地预览博客" class="headerlink" title="本地预览博客"></a>本地预览博客</h1><h2 id="启动hexo服务"><a href="#启动hexo服务" class="headerlink" title="启动hexo服务"></a>启动hexo服务</h2><p>在blog路径下使用如下命令启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
+<p>然后在浏览器地址栏输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 回车访问个人博客</p>
+<h2 id="编译博客"><a href="#编译博客" class="headerlink" title="编译博客"></a>编译博客</h2><p>每一次修改博客后，先ctrl+s保存，然后使用如下命令编译：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
+<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>当修改了博客内容，编译后浏览器页面没有发生变化，需要清理博客缓存，方式如下：</p>
 <ol>
-<li>win+r 输入 cmd 回车</li>
-<li>在cmd窗口输入 npm install -g hexo-cli<br> npm：依赖包管理工具<br> install：安装/导入<br> -g：全局安装<br><h1 style="color:red">三、 初始化一个博客项目</h1><br> hexo init 项目名称（英文）<br> init：初始化<br><h1 style="color:red">四、进入项目，添加依赖包</h1><br> 1、进入到项目主目录文件夹<br> 2、鼠标右键选择git bash here<br> 3、使用npm install 命令添加依赖包<br> 目的：将项目所需依赖包添加到本地<br><h1 style="color:red">五、启动服务器</h1><br> 1、在博客目录右键git bash here<br> 2、输入hexo server<br> 3、在浏览器地址栏输入：localhost：4000 回车预览<br> 先node 再git<br><h1 style="color:red">六、发表文章</h1><br> hexo new 文章名<br><h1 style="color:red">七、博客预览</h1><br> 1、ctrl+s 保存<br> 2、hexo g 编译<br> 3、回到浏览器ctrl+r刷新</li>
+<li>在blog目录执行hexo clean后重新编译</li>
+<li>在浏览器博客页面使用ctrl+shift+i调出控制台，切换到network，选中disable cache，然后ctrl+r(刷新)</li>
 </ol>
-
+<h1 id="编写博客"><a href="#编写博客" class="headerlink" title="编写博客"></a>编写博客</h1><ol>
+<li>创建博客文章<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>然后在source/_post 目录打开相应的md编辑即可</p>
+<ol>
+<li><p>创建页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面标题</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后在source目录下找到对应文件夹，打开里面的index.md编写即可</p>
+</li>
+</ol>
+<h1 id="替换主题"><a href="#替换主题" class="headerlink" title="替换主题"></a>替换主题</h1><ol>
+<li>在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>官网找到自己喜欢的主题，根据提示git到本地themes目录，</li>
+<li>修改博客项目根路径下的_config.yml配置文件，将theme改为新主题文件夹名称</li>
+<li>停止hexo服务再重启(ctrl+c)</li>
+<li>执行hexo g编译，然后去浏览器预览</li>
+</ol>
+<h1 id="托管到github"><a href="#托管到github" class="headerlink" title="托管到github"></a>托管到github</h1><ol>
+<li>注册github账号(自行百度)</li>
+<li><p>验证ssk key</p>
+<ul>
+<li>在桌面右键git bash here</li>
+<li>ssh-keygen -t rsa-C “注册git的邮箱” 命令，然后一路回车，直到出现泡沫团</li>
+<li>进入C:\users\计算机用户名.ssh文件夹</li>
+<li>右键打开id_rsa.pub文件，然后ctrl+a全选，然后ctrl+c复制</li>
+<li>进入github官网，右上角点击个人头像，下拉菜单选择settings</li>
+<li>选择左侧ssh and gpg keyd</li>
+<li>单击右侧add ssh key按钮</li>
+<li>title：随便填入，key：ctrl+v，然后点击add ssh key按钮</li>
+</ul>
+</li>
+<li><p>验证github用户名和邮箱</p>
+<ul>
+<li>在桌面右键git bash here，依次执行以下命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- git config --global user.name&quot;girhub用户名</span><br><span class="line">&quot;</span><br><span class="line">- git config --global user.email&quot;github邮箱&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>在github创建用户名同名仓库</p>
+<ul>
+<li>点击github头像左侧+按钮，选择第一项</li>
+<li>仓库名: github用户名.github.io<br>  ps:注意区分大小写，必须保持一致</li>
+</ul>
+</li>
+<li><p>配置_config.yml</p>
+<ul>
+<li>打开blog项目根目录的_config.yml，找到最下面的deploy选项，按照如下格式填写：<pre><code>deploy:
+  type:git
+  repository:http://github.com/用户名/用户名.github.io
+  branch:master
+</code></pre>ps：注意缩进和符号以及属性前面的空格</li>
+</ul>
+</li>
+<li><p>在blog根目录执行hexo d命令将本地博客代码推送到github服务器<br> ps：不需要每更改一次都推送，先在本地测试准确无误后再推送</p>
+</li>
+</ol>
+<h1 id="个人域名绑定"><a href="#个人域名绑定" class="headerlink" title="个人域名绑定"></a>个人域名绑定</h1><pre><code>1. 域名申请(自行百度)
+2. 域名解析，添加如下记录值
+</code></pre><table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>解析线路(isp)</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>默认</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>默认</td>
+<td>192.30.252.154   </td>
+</tr>
+</tbody>
+</table>
+<pre><code>3. 在博客主目录下找到public文件夹
+    在里面新建名为CNAME的文件(不带后缀)
+4. 在CNAME文件里面填写个人域名，如baidu.com
+    ps：不带http、www等修饰
+5. 执行hexo d命令推送    
+</code></pre>
       
       
         <div class="page-reward">
@@ -330,13 +448,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/12/26/笔记/">hexo+node+git 搭建个人博客</a></p>
+        <p><span>本文标题:</span><a href="/2017/12/28/hexo-github搭建个人博客/">hexo+github搭建个人博客</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 葡萄儿 的个人博客">葡萄儿</a></p>
-        <p><span>发布时间:</span>2017年12月26日 - 16时33分</p>
-        <p><span>最后更新:</span>2017年12月28日 - 11时38分</p>
+        <p><span>发布时间:</span>2017年12月28日 - 14时37分</p>
+        <p><span>最后更新:</span>2017年12月28日 - 16时07分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/12/26/笔记/" title="hexo+node+git 搭建个人博客">http://www.baidu.com/2017/12/26/笔记/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://www.baidu.com/2017/12/26/笔记/　　作者: 葡萄儿" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/28/hexo-github搭建个人博客/" title="hexo+github搭建个人博客">http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.baidu.com/2017/12/28/hexo-github搭建个人博客/　　作者: 葡萄儿" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -349,18 +467,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/12/26/笔记-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">你好！世界</div>
+    <a href="/2017/12/26/笔记-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">笔记</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -371,7 +480,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">一、环境 工具的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-node"><span class="toc-number">1.1.</span> <span class="toc-text">1. node</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#特点：解析效率高，没有兼容性"><span class="toc-number">1.1.1.</span> <span class="toc-text">-    特点：解析效率高，没有兼容性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本：建议版本是6-10"><span class="toc-number">1.1.2.</span> <span class="toc-text">-    版本：建议版本是6.10</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装："><span class="toc-number">1.1.3.</span> <span class="toc-text">-    安装：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何测试？"><span class="toc-number">1.1.4.</span> <span class="toc-text">如何测试？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-vscode-：多语言开发工具"><span class="toc-number">1.2.</span> <span class="toc-text">2. vscode ：多语言开发工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-git-版本控制器"><span class="toc-number">1.3.</span> <span class="toc-text">3. git 版本控制器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">二、安装hexo脚手架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">三、 初始化一个博客项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">四、进入项目，添加依赖包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">五、启动服务器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">六、发表文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">七、博客预览</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境搭建"><span class="toc-number">1.</span> <span class="toc-text">环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装node环境"><span class="toc-number">1.1.</span> <span class="toc-text">安装node环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git"><span class="toc-number">1.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装vscode编译器"><span class="toc-number">1.3.</span> <span class="toc-text">安装vscode编译器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装hexo脚手架"><span class="toc-number">2.</span> <span class="toc-text">安装hexo脚手架</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建博客项目"><span class="toc-number">3.</span> <span class="toc-text">创建博客项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#本地预览博客"><span class="toc-number">4.</span> <span class="toc-text">本地预览博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#启动hexo服务"><span class="toc-number">4.1.</span> <span class="toc-text">启动hexo服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译博客"><span class="toc-number">4.2.</span> <span class="toc-text">编译博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#清理缓存"><span class="toc-number">4.3.</span> <span class="toc-text">清理缓存</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编写博客"><span class="toc-number">5.</span> <span class="toc-text">编写博客</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#替换主题"><span class="toc-number">6.</span> <span class="toc-text">替换主题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#托管到github"><span class="toc-number">7.</span> <span class="toc-text">托管到github</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#个人域名绑定"><span class="toc-number">8.</span> <span class="toc-text">个人域名绑定</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -437,13 +546,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/12/26/笔记-1/" title="上一篇: 笔记">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/12/26/hello-world/" title="下一篇: 你好！世界">
+            <a href="/2017/12/26/笔记-1/" title="下一篇: 笔记">
                 <i class="fa fa-angle-right"></i>
             </a>
         
